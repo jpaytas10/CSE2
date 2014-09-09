@@ -51,7 +51,7 @@ public class Arithmetic{
             System.out.println("You pay $"+ (totalCostEnvelopesBT$*taxPercent)+ " of tax on envelopes.");
             
             //perform calculations for total price of purchase before tax
-            System.out.println("The total price of this purchase is $"+ (totalCostSocksBT$+totalCostGlassesBT$+totalCostEnvelopesBT$)+ "BEFORE tax.");
+            System.out.println("The total price of this purchase is $"+ (totalCostSocksBT$+totalCostGlassesBT$+totalCostEnvelopesBT$)+ " BEFORE tax.");
                 
             //define variables for total cost after tax
                 double totalCostSocks$=((totalCostSocksBT$)+(totalCostSocksBT$*taxPercent));
