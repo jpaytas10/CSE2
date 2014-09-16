@@ -37,15 +37,15 @@ public class Bicycle{
         
         //define new variables
         double nMiles = ((((nCounts*wheelDiameter*PI)/inchesPerFoot)/feetPerMile));
-        float nMilesFloat = (float) nMiles;
+        double nMilesUse = (((int)(nMiles*100))/100.0);
         int nMinutes = (nSeconds/secondsPerMinute);
         double nMinutesDouble = (double) nMinutes;
-        double avgSpeed = (((nMilesFloat)/nMinutes)*secondsPerMinute);
-        float avgSpeedFloat = (float) avgSpeed;
+        double avgSpeed = (((nMiles)/nMinutes)*secondsPerMinute);
+        double avgSpeedUse = (((int)(avgSpeed*100))/100.0);
         
         //print out results
-        System.out.println("The distance was " +(nMilesFloat)+ " miles and took " +(nMinutesDouble)+ " minutes.");
-        System.out.println("The average mph was " +(avgSpeedFloat)+ ".");
+        System.out.println("The distance was " +(nMilesUse)+ " miles and took " +(nMinutesDouble)+ " minutes.");
+        System.out.println("The average mph was " +(avgSpeedUse)+ ".");
         
         
     

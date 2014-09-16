@@ -27,12 +27,12 @@ public class FourDigits {
         
         int cutDigits = (int) enteredNumber;
         int inBetween = (cutDigits*10000);
-        double rawNumber = (enteredNumber*10000);
+        int rawNumber = (int) (enteredNumber*10000);
         
-        double fourDigitsDouble = (rawNumber-inBetween);
+        int fourDigitsDouble = (rawNumber-inBetween);
         int fourDigits= (int) fourDigitsDouble;
         
-        System.out.println("The four digits to the right of the decimal point are: " + (fourDigits)+ ".");
+        System.out.printf("The four digits to the right of the decimal point are: %04d" , fourDigits);
         
     } //end of method
     
