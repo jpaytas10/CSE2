@@ -14,17 +14,29 @@ public class WelcomeClass{
 //  add main method
   public static void main(String[] args) {
       
-//  print out the statement with decorations around it
-    System.out.println(" -----------");
-    System.out.println(" | WELCOME |");
-    System.out.println(" -----------");
-    System.out.println("  ^   ^   ^   ^   ^   ^");
-    System.out.println(" / \\ / \\ / \\ / \\ / \\ / \\");
-    System.out.println("  |-J--L--P--2--1--8-|");
-    System.out.println(" \\ / \\ / \\ / \\ / \\ / \\ /" );
-    System.out.println("  v   v   v   v   v   v");
-    System.out.println("Last year I spent about five months designing, building, and wiring an electronic");
-    System.out.println("'laser harp.' An arduino-based MIDI controller, play ANY sound breaking laserbeams!");
+///snippet 2
+float val1 = 3.0f;
+float val2 = 7.4f;
+
+if ( val1 > val2 ){
+    float val3 = 4.4f;
+    if ( val3 < val2 ) {
+        System.out.println("sum1: " + (val1 + val2) );
+    }
+    else{
+        System.out.println("sum2: " +  val1 + val2  );
+    }
+}
+else{
+    float val3 = 2.2f;
+    if ( val3 < val2 ) {
+        System.out.println("sum3: " +  val1 + val2  );
+    }
+    else{
+        System.out.println("sum4: " + (val1 + val2) );
+    }
+}
+
     
     //test/testtest
   }

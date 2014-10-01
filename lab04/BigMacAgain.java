@@ -29,11 +29,15 @@ public class BigMacAgain {
         System.out.print("Enter the number of Big Macs: ");
         
         if (myScanner.hasNextInt()) {
-                nBigMacs = myScanner.nextInt();
+            nBigMacs = myScanner.nextInt();
+            if (nBigMacs>0) {
                 double costTotalRaw = (nBigMacs*costBigMac);
-                System.out.println("You ordered " +(nBigMacs)+ " Big Macs at a cost of " +(costBigMac)+ " each for a total of $"+(costTotalRaw)+".");
-                
-                
+                System.out.printf("You ordered %d Big Macs at a cost of %.2f each for a total of $ %.2f\n", nBigMacs, costBigMac, costTotalRaw);
+            }    
+                else {
+                    System.out.println("You did not enter a postive integer.");
+                    return;
+                }
         } //end of first if statement
         else {
             System.out.println("You did not enter an integer.");
@@ -48,14 +52,14 @@ public class BigMacAgain {
             System.out.println("The cost of fries is: $"+costFries+".");
              double costTotalYes = (nBigMacs*costBigMac + (costFries));
         //calculate total
-        System.out.println("The total cost of your meal is $" +(costTotalYes)+ ".");
+        System.out.printf("The total cost of your meal is $%.2f \n" , costTotalYes);
         } //end if statement
         
         else if (response.equals ("N") || response.equals("n")) {
             System.out.println("You ordered no fries.");
             double costTotalNo = (nBigMacs*costBigMac);
         //calculate total
-        System.out.println("The total cost of your meal is $" +(costTotalNo)+ ".");
+        System.out.printf("The total cost of your meal is $%.2f\n" , costTotalNo);
         } //end else if statement
         
         else {
