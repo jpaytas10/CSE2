@@ -13,6 +13,7 @@ public class BlockedAgain{
         m = getInt(); 
         allBlocks(m);
     }
+    
 
 
 public static int getInt(){
