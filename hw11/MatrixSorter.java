@@ -69,7 +69,7 @@ public class MatrixSorter{
        return minimum;
    }//end of findMin method
    
-   public static void sort (int [][] array1){
+   public static void sort (int [][] array0){
        
    }//of of sort method
    
